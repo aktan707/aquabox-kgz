@@ -53,6 +53,16 @@ export default function LoginPage() {
           <p className="text-muted-foreground mt-1">Система учёта автомойки</p>
         </div>
 
+        {/* Demo Credentials Alert */}
+        <div className="mb-4 p-4 bg-primary/10 border border-primary/30 rounded-lg">
+          <p className="text-sm text-center">
+            <span className="text-muted-foreground">Демо доступ: </span>
+            <span className="font-semibold text-foreground">admin</span>
+            <span className="text-muted-foreground"> / </span>
+            <span className="font-semibold text-foreground">admin123</span>
+          </p>
+        </div>
+
         <Card className="glass-card border-border/50">
           <CardHeader className="text-center">
             <CardTitle className="text-xl">Вход в систему</CardTitle>
@@ -114,12 +124,6 @@ export default function LoginPage() {
                 )}
               </Button>
             </form>
-
-            <div className="mt-6 pt-6 border-t border-border/50">
-              <p className="text-xs text-muted-foreground text-center">
-                Демо доступ: <span className="text-foreground">admin / admin123</span>
-              </p>
-            </div>
           </CardContent>
         </Card>
       </div>
