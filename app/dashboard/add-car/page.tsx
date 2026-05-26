@@ -113,7 +113,7 @@ export default function AddCarPage() {
             {/* Employee Selection */}
             <div className="flex flex-col gap-2">
               <Label htmlFor="employee">Сотрудник *</Label>
-              <Select value={employeeId} onValueChange={setEmployeeId}>
+              <Select value={employeeId} onValueChange={(v) => setEmployeeId(v ?? "")}>
                 <SelectTrigger id="employee" className="h-12">
                   <SelectValue placeholder="Выберите сотрудника" />
                 </SelectTrigger>
@@ -197,7 +197,7 @@ export default function AddCarPage() {
                 className="h-12"
               />
               <p className="text-xs text-muted-foreground">
-                Цена заполняется автоматически, но можно изменить вручную
+                ��ена заполняется автоматически, но можно изменить вручную
               </p>
             </div>
 
